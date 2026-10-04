@@ -1,4 +1,6 @@
 ﻿using ReflectionExercise.Attributes;
+using ReflectionExercise.Models;
+
 namespace ReflectionExercise.Controllers;
 
 [Route("api/[controller]/[action]")]
@@ -12,13 +14,13 @@ public class WatchController
         }
 
         [HttpDelete]
-        public void DeleteVideo()
+        public void DeleteVideo([FromQuery] int id,  [FromQuery] string name)
         {
                 
         }
 
         [HttpPost]
-        public void PostVideo()
+        public void PostVideo([FromBody] VideoDto video)
         {
                 
         }

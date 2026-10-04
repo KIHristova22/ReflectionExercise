@@ -8,5 +8,5 @@ public class RouteAttribute : Attribute
         template = template;
     }
 
-    public string Template { get; } 
+    public string Template { get;  } 
 }
